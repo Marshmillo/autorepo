@@ -1,0 +1,11 @@
+# Compile
+/build
+
+# Dependencies
+/node_modules
+
+# Environments
+.env
+
+# Package
+package-lock.json
