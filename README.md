@@ -40,6 +40,8 @@ npm run prod
 
 Se debe configurar correctamente las variables de entorno para la conexion al mongoBD y Mailing
 
+Reemplazar el archivo .env.example por .env
+
 ## Authors
 
 Kelvin Carrión Alfaro  
