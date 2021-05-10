@@ -10,6 +10,7 @@ Modelo inicial para creacion de servicios Restful usando NodeJS, ExpressJS y Typ
 - Configuración con TypeScript
 - Configuración con Cors
 - Configuración con NodeMailer
+- Configuración con Multer(subida de arquivos)
 
 ### Dependencias adicionales
 
