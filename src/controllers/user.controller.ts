@@ -1,4 +1,6 @@
+import { Request } from 'express';
 import { utc } from 'moment';
+import Multer from '../config/uploads/multer';
 import { IUser } from '../interfaces/user';
 import userModel from '../models/user.model';
 
@@ -18,6 +20,14 @@ class UserController {
   async list() {
     const result: IUser[] | null = await userModel.find();
     return result;
+  }
+
+  async uploadImage(req: Request, res: any) {
+    const multer = new Multer('upload', 'image');
+    const upload = multer.init();
+    upload(req, res, (err: any) => {
+      console.log(err);
+    });
   }
 }
 
